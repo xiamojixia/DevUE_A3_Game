@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Haonan Wu/Scenes/main menu.unity
+    guid: 35b8f18e9cdb19640b7fa80ec9d9f9a3
+  - enabled: 1
+    path: Assets/Haonan Wu/Scenes/Quit Scene.unity
+    guid: 439dcb53d2ce069498452b4aea6c17b9
+  - enabled: 1
+    path: Assets/Haonan Wu/Scenes/play menu.unity
+    guid: 43d01fdde2da8894f85d42eeb61e2b33
+  - enabled: 1
+    path: Assets/Haonan Wu/Scenes/Help Scene.unity
+    guid: 2d90d3ba3f910e142bff219b82c5ac10
+  - enabled: 1
+    path: Assets/Haonan Wu/Scenes/Credits Scene.unity
+    guid: fb1aebeb6ddca2e4ca365cc40319eeb7
   m_configObjects: {}
