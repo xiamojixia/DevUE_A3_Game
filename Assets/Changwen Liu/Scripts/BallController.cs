@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BallController : MonoBehaviour
@@ -8,14 +9,23 @@ public class BallController : MonoBehaviour
     public float jumpForce = 5f;
     public int maxJumps = 1;
 
+    public AudioClip jumpSound;
+    public AudioMixerGroup sfxMixerGroup;
+
     private Rigidbody rb;
     private float currentRotation = 0f;
     private int jumpsRemaining;
+
+    private AudioSource audioSource;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         jumpsRemaining = maxJumps;
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+        audioSource.outputAudioMixerGroup = sfxMixerGroup;
     }
 
     void Update()
@@ -25,6 +35,11 @@ public class BallController : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             jumpsRemaining--;
+
+            if (jumpSound != null)
+            {
+                audioSource.PlayOneShot(jumpSound);
+            }
         }
     }
 
