@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Changwen Liu/Scenes/SettingPage.unity
     guid: 668a264a8df1f384a938c7dd7cd4d7d9
   - enabled: 1
-    path: Assets/Changwen Liu/Scenes/HelpPage.unity
-    guid: 321a20361cf653f40afd89cde513ca29
-  - enabled: 1
     path: Assets/Changwen Liu/Scenes/Level1.unity
     guid: ff893c4900742a242b4158bbf04dc506
   - enabled: 1
@@ -26,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Haonan Wu/Scenes/Level3.unity
     guid: a69f48e247fb5ed469ed07021b2ba2b1
+  - enabled: 1
+    path: Assets/Haonan Wu/Scenes/HelpPage.unity
+    guid: 4303ca3aa7d269a4a9cfc34d61de89da
   m_configObjects: {}
