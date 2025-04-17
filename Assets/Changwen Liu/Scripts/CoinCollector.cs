@@ -1,12 +1,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CoinCollector : MonoBehaviour
 {
     public GameObject redModel;
     public GameObject yellowModel;
     public GameObject blueModel;
-
+    public GameObject winPage;
+    public int targetScore = 30;
     public int score = 0;
     public TMPro.TextMeshProUGUI scoreText;
 
@@ -48,6 +50,11 @@ public class CoinCollector : MonoBehaviour
             score += coin.value;
             scoreText.text = "Score: " + score;
             Destroy(other.gameObject);
+        }
+        
+        if (score >= targetScore && winPage != null)
+        {
+            winPage.SetActive(true);
         }
     }
 }
