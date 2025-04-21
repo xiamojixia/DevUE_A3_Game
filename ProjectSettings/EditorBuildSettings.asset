@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Changwen Liu/Scenes/MainMenu.unity
+    path: Assets/ChangwenLiu/Scenes/MainMenu.unity
     guid: 3a057afba71f2924da2aebce2fc925a7
   - enabled: 1
-    path: Assets/Changwen Liu/Scenes/LevelSelectPage.unity
+    path: Assets/ChangwenLiu/Scenes/LevelSelectPage.unity
     guid: 73cb819eb5fd8ab42b8036b802e4a1b2
   - enabled: 1
-    path: Assets/Changwen Liu/Scenes/SettingPage.unity
+    path: Assets/ChangwenLiu/Scenes/SettingPage.unity
     guid: 668a264a8df1f384a938c7dd7cd4d7d9
   - enabled: 1
-    path: Assets/Changwen Liu/Scenes/Level1.unity
+    path: Assets/ChangwenLiu/Scenes/Level1.unity
     guid: ff893c4900742a242b4158bbf04dc506
   - enabled: 1
     path: Assets/Qingyang Jiao/Scenes/Level2.unity
